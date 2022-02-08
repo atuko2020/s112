@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>S112_YONAHARA REN</title>
+    <meta name="description" content="わたし">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Favicin -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+<div id="container">
+<!-- Header Section -->
+<header>
+    <h1 class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Ren Yonahara"><span id="name">Contact Me</span></a>
+    </h1>
+    <span class="ribbon">★</span>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="./index.html" data-hover="Home">Home</a></li>
+            <li><a href="./works.html" data-hover="Works">Works</a></li>
+            <li><a href="./about_me.html" data-hover="About">About</a></li>
+            <li class="current"><a href="./contact_me.html" data-hover="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="gallery">
+        <h2>YONAHARA REN</h2> 
+    </div>
+</header><!-- /header -->
+<div id="wrapper">
+    <h2 class="page-title">Contact Me</h2>
+    <main>
+    <div id="contact">
+        <form action="example.php" method="POST" name="contact-form">
+            <label for="Name">Name</label> 
+            <input id="Name" type="text" name="Name" required maxlength="15" placeholder="Name">
+            <br>
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" required placeholder="Email Address">
+            <br>
+            <label for="tel">Phone Number</label> 
+            <input id="tel" type="tel" name="tel" required pattern="\d{11,}" placeholder="Phone Number(without'-')">
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" cols="50" placeholder="Message"></textarea>
+            <br>
+            <input id="button" type="submit" value="Send">
+        </form>
+    </div>
+    <p class="pagetop">
+        <a href="#" title="ページトップへ戻る">
+            <img src="images/pagetop.png" alt="▲PAGE TOP">
+        </a>
+    </p>
+    </main><!-- /main -->
+</div>
+<!-- main Section -->
+
+<footer><!-- Footer Section -->
+    <p>Last Modified :
+        <script>
+         var modified = new Date(document.lastModified);
+         var year = modified.getFullYear();
+         var month= modified.getMonth() + 1;
+         var date = modified.getDate();
+         document.write( year + "年" + month + "月" + date + "日" );
+        </script> 
+        <br>
+        <small>&copy;Yonahara Ren, All Rights Reserved.</small>
+    </p>
+</footer><!-- /Footer -->
+</div>
+</body>
+
+</html>

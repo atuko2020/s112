@@ -1,0 +1,76 @@
+@charset "utf-8";
+main{
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+#contact{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    margin: 1px;
+	padding: 0.4em 0.8em;
+    padding-right: 0;
+}
+textarea{
+    font-size: 1em;
+    vertical-align: text-top;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+#button{
+    margin-left: 21rem;
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: #e6e6e6;
+    border: 2px solid rgb(19, 95, 139);
+    color: rgb(19, 95, 139);
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+#button:hover{
+    color:white;
+    background: rgb(19, 95, 139);
+}
+#message{
+    background-color: #e6e6e6;
+}
+input{
+    width: 12rem;
+    border: none;
+    outline: none;
+    margin-bottom: 2rem;
+    font-size: 1em;
+    margin-left: 2rem;
+    background-color: #e6e6e6;
+    border-bottom: 1px solid rgb(119, 119, 119);
+}
+input:valid{
+    border-bottom: 1px solid rgb(136, 197, 255);
+}
+input:invalid{
+    border-bottom: 1px dashed rgb(255, 111, 111);
+}
+@media(max-width:745px) {
+    textarea{
+        max-width: 230px;
+    }
+    #button{
+        margin-left: 17rem;
+        height: 20px;
+        width: 75px;
+        font-size: 6px;
+    }
+}
+@media(max-width:435px) {
+    #button{
+        margin-left: 12rem;
+    }
+}

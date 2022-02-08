@@ -1,0 +1,60 @@
+@charset "utf-8";
+body{
+    width: 100%;
+}
+span{
+    vertical-align: -webkit-baseline-middle;
+    align-items: center;
+}
+var{
+    display: inline-block;
+    bottom: 0;
+    font-size:medium;
+    text-align: center;
+}
+#works{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit,200px);
+    justify-content: space-around;
+    margin: 1% 10%;
+}
+#works a {
+    display: inline-block;
+    width:200px;
+    height:230px;
+    text-align: center;
+    font-size:2em;
+    color:lightblue;
+    z-index: 5;
+}
+#works div:first-child p{
+    background: url(../images/kadai9.png),brown;
+    background-size: 170px 200px,100px 100px;
+    background-position: top 15px left 15px,top 0 left 0;
+    background-repeat: no-repeat;
+}
+#works div:nth-child(2) p{
+    background: url(../images/kadai10.png),brown;
+    background-size: 170px 200px,100px 100px;
+    background-position: top 15px left 15px,top 0 left 0;
+    background-repeat: no-repeat;
+}
+#works div:nth-child(3) p{
+    background: url(../images/kadai20.png),brown;
+    background-size: 170px 200px,100px 100px;
+    background-position: top 15px left 15px,top 0 left 0;
+    background-repeat: no-repeat;
+}
+#works div:nth-child(4) p{
+    background: url(../images/kadai21.png),brown;
+    background-size: 170px 200px,100px 100px;
+    background-position: top 15px left 15px,top 0 left 0;
+    background-repeat: no-repeat;
+}
+#works div:last-child p{
+    background: url(../images/kadai22.png),brown;
+    background-size: 170px 200px,100px 100px;
+    background-position: top 15px left 15px,top 0 left 0;
+    background-repeat: no-repeat;
+}

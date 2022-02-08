@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body{
+    background-image: url("../images/bg.png");/*背景画像投入*/
+}
+h1{
+    font-family: 'M PLUS Rounded 1c', sans-serif;/*文字フォント*/
+    color: #EFEFEF;/*文字色*/
+    background-color: #FC9D9D;/*h1の部分の背景の色*/
+}
+h2{
+    font-family: "遊ゴシック体","Yu Gothic",YuGothic,sans-serif;/*文字フォント*/
+    color: #FCECEA;/*文字色*/
+    background-color: #FC9D9D;/*h2の部分の背景の色*/
+}
+p{
+    font-family: "ヒラギノ丸ゴ　Pro W4","Hiragino Maru Gothic Pro",sans-serif;/*文字フォント*/
+    text-align: justify;/*両端揃え*/
+    line-height: 1.7;/*行の高さ*/
+    color: #5B5B5B;/*文字色*/
+}

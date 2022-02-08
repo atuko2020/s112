@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    background-image: url("../images/bg.png");
+}
+#container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+header{
+    height: 300px;
+    text-align: center;
+    background-color: #fab1b1;
+}
+main{
+    width: 80%;
+    min-width: 340px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #ffebe8;
+}
+section{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+section img{
+    width: 35%;
+    min-width: 200px;
+    box-sizing: border-box;
+}
+section p{
+    width: 55%;
+    min-width: 320px;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    float: right;
+}
+main section:first-child p{
+    /*text-align: left;*/
+    float: left;
+}
+main section:first-child img{
+    margin-right: 1rem;
+}
+main section:nth-child(2) p{
+    width: auto;
+}
+main section:last-child p {
+    float: right;
+}
+h1{
+    margin: 0;
+    padding: 1rem 1rem 0rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #5B5B5B;
+    
+}
+h2{
+    padding: 0.5rem 0.5rem 0rem;
+    border-left: #FC9D9D solid;
+    border-bottom: #5B5B5B solid;
+    font-family: "遊ゴシック体","Yu Gothic",YuGothic,sans-serif;
+    color: #5B5B5B;
+}
+p{
+    padding: 0rem 1rem;
+    font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro",sans-serif;
+    text-align: justify;
+    line-height: 1.7;
+    color: #5B5B5B;
+}
+ul{
+    list-style-position: inside;
+    list-style-image:url(../images/star.png);  
+}
+q{
+    font-size: 1.2rem;
+}
+.image-vw{
+    width: 50vw;
+}
+footer{
+    text-align: center;
+    background-color: #fab1b1;
+    padding: 26px 0;
+    height: 50px;
+    margin-bottom: 0;
+}
+@media(max-width:800px){
+    main{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section p{
+        margin: 0%;
+    }
+    main section:nth-child(1) p,main section:nth-child(3) p{
+        width: 95%;
+        margin: auto;
+        box-sizing: border-box;
+        float: none;
+    }
+}

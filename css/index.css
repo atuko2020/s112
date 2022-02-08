@@ -1,0 +1,199 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Sketch_Block';
+    src: url(../font/Sketch_Block.ttf);
+}
+@font-face {
+    font-family: 'Sketch_Fine_Serif';
+    src: url(../font/Sketch\ Fine\ Serif.otf);
+}
+html{
+    font-size: 100%;;
+}
+body{
+    line-height: 1.7;
+    color: #ECB365;
+    margin: 0 0;
+}
+h1{
+    font-size: 2rem;
+}
+a{
+    color: #0f4c75;
+    text-decoration: none;
+}
+img{
+    max-width: 30%;
+}
+#home{
+    min-height: 100vh;
+}
+.page-title{
+    text-transform: none;
+    animation-name: SlideIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.sub-title{
+    animation-name: SlideIn;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes SlideIn{
+    0% {
+        background: linear-gradient(opacity 100% opacity 0%);
+        opacity: 0;
+      }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#name{
+    text-align: center;
+    display:inline-block;
+    font-family: 'Caveat',cursive;
+    vertical-align: -webkit-baseline-middle;
+    align-items: center;
+    text-shadow:0.5px 0.5px 0 rgb(255, 255, 146), -0.5px -0.5px 0 rgb(255, 255, 146),
+              -0.5px 0.5px 0 rgb(255, 255, 146), 0.5px -0.5px 0 rgb(255, 255, 146),
+              0px 0.5px 0 rgb(255, 255, 146),  0 -0.5px 0 rgb(255, 255, 146),
+              -0.5px 0 0 rgb(255, 255, 146), 0.5px 0 0 rgb(255, 255, 146);
+    font-size:140%;
+}
+.big-bg{
+    background-image: url(../images/book.png),url(../images/grain.png);
+    background-size:contain,contain;
+    background-position: center,center top;
+    background-repeat: no-repeat,repeat;
+    z-index: 0;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 4%;
+}
+.logo{
+    display: block;
+    width: 40vw;
+    margin-top: 30px;
+}
+.logo img{
+    min-width: 175px;
+    min-height: 175px;
+    vertical-align: middle;
+}
+.main-nav{
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+    font-family: 'Architects Daughter',cursive;
+    font-size: 1.2rem;
+}
+.tag{
+    margin-top:3.95rem;
+    margin-left: 6.5px;
+    text-shadow:0.5px 0.5px 0 rgb(126, 126, 126), -0.5px -0.5px 0 rgba(126, 126, 126),
+              -0.5px 0.5px 0 rgb(126, 126, 126), 0.5px -0.5px 0 rgba(126, 126, 126),
+              0px 0.5px 0 rgb(126, 126, 126),  0 -0.5px 0 rgba(126, 126, 126),
+              -0.5px 0 0 rgb(126, 126, 126), 0.5px 0 0 rgba(126, 126, 126);
+    transform: rotate(-50.2deg);       
+}
+li {
+    background-image: url(../images/bookmark.png);
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    background-repeat:no-repeat;
+    z-index: 6;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+li:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(15px 5px 2px #313131);
+}
+.home-content{
+    font-family: Sketch_Block,Sketch_Fine_Serif,cursive;
+    text-align: center;
+    margin-top: 8%;
+}
+.page-title{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+.sub-title{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-transform: none;
+    margin-block-start: 1rem;
+    margin-block-end: 1.25rem;
+}
+.button{
+    font-size: 1.375rem;
+    background-color: rgb(119, 117, 106);
+    padding: 18px 32px;
+    box-shadow: inset 0 0 0.8em rgb(255 255 255 / 30%), 0 0 0.8em rgb(255 255 255 / 30%);
+    border: #fff solid 1.5px;
+    color: white;
+    background: none;
+    border-radius: 0;
+    padding: 1.2vw 5vw;
+    letter-spacing: 0.35em;
+    font-size: 0.7em;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    margin: 1em;
+}
+.button:hover{
+    background-color:rgb(119, 117, 106);
+    color: aliceblue;
+}
+
+/*mobile*/
+@media(max-width:745px){
+    .page-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .logo img{
+        min-width: 100px;
+        min-height: 100px;
+        vertical-align: middle;
+    }
+    li{
+        width: 75px;
+        height: 75px;
+        background-size: 75px 75px;
+        background-repeat:no-repeat;
+        z-index: 5;
+        transition: all 0.5s;
+        transform: scale(1);
+    }
+    .main-nav{
+        flex-direction: column;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        list-style: none;
+    }
+    .tag{
+        margin-top:1.4rem; 
+        margin-left: 0;
+        width: 90px;
+    }
+    #name{
+        font-size:70%;
+    }
+}

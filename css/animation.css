@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*#works a{
+    opacity: 0 ;
+    transition: all 1.5s;
+    border-radius: 100%;
+    transform: scale(0.1);
+}
+#works a:visited{
+    color: brown;
+}
+#works div:hover a{
+    opacity: 1;
+    border: solid rgb(129,41,88) 2px;
+    border-radius: 0%;
+    transform: scale(1);
+    background-color: beige;
+}*/
+.animationA{
+    transform: perspective(800px) rotate3d(0,1,0,0deg);
+    background-image: url(../images/bookcover.png);
+    background-size: cover;
+    z-index: 5;
+}
+.animationA:focus{
+    transform-origin:right;
+    animation-name: open1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform:perspective(1000px) rotate3d(0,1,0,105deg); 
+}
+.animationA::after{
+    z-index: 6;
+}
+@keyframes open1{
+    from{
+        transform:perspective(1000px) rotate3d(0,1,0,0deg) ;
+    }
+    to{
+        transform:perspective(1000px) rotate3d(0,1,0,105deg);
+    } 
+}

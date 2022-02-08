@@ -1,0 +1,56 @@
+@charset "utf=8";
+section{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+table{
+    text-decoration: none;
+    line-height: 1;
+    max-width: 500px;
+    min-width: 400px;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+th,td {
+    border: solid 2px rgb(100, 100, 100);
+    padding: 3px 10px;
+    text-align: center;
+}
+th{
+    background-color: #c5a8807c;
+}
+td img{
+    width: 150px;
+    height: 150px;
+}
+caption{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+#episord{
+    text-align:justify;
+    font-size: 5rem;
+}
+#about{
+    font-family:'Zen Kurenaido', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(max-width:745px){
+    table{
+        max-width: 300px;
+        min-width: 100px;
+        margin-bottom: 3rem;
+        font-size: 12px;
+    }
+    td img{
+        width: 50px;
+        height: 50px;
+    }
+    
+}

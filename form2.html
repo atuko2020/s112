@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>S112_YONAHARA REN</title>
+    <meta name="description" content="アンケート">
+</head>
+
+<body>
+<div id="container">
+<!-- main Section -->
+<main>
+    <section>
+        <h2>S112アンケート2</h2>
+        <form action="example.php" method="POST" name="contact-form">
+            <label for="Number">出席番号を入力してください。 : </label>
+            <input id="Number" type="text" name="Number" required pattern="[ABXSP]\d{3}" placeholder="ax.X100">
+            <br>
+            <label for="fruit">bananaとcherryとorangeのどれが好き？</label>
+            <input id="fruit" type="text" name="fruit" required pattern="[Bb]anana|[Cc]herry|[Oo]range">
+            <br>    
+            <label for="need">どのくらい要ります？</label>   
+            <input id="need" type="number" name="need" required min="1" max="10" placeholder="1">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main><!-- /main -->
+</div>
+</body>
+
+</html>
